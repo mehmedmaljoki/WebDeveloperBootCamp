@@ -41,3 +41,26 @@ array.indexOf(2) // expected 1
 
 // reverse
 array2.reverse(); // expected 9,8,7
+
+// slice ist - getting(copy) a portion of an Array. Man kann aber auch nur den start angeben, dann geht es
+// bis zum Ende ab dem angegebenen Index
+// wenn man eine negative Nummer angibt, dann startet er von hinten: zB -3 sind die letzten 3 Elemente
+let sliceArrayExpected = stuff.slice(1, 3) // expected [69, cat, null]
+
+
+// splice
+// etwas an einer Stelle im Array einfuegen
+// der erste Parameter ist die Stelle
+// der zweite Parameter ist was man loeschen mochte und wie viele zB 0 ist nichts loeschem, 1 ist 1 Element usw..
+// dh: man gibt den start an und ab dem wie viele Elemente loeschen
+// der dritte Parameter: was man einfuegen moechte, konnen auch mehrere Sein
+
+
+//returned wirden die geloeschten Elemente oder wenn nichts loschen das leere Array
+
+const months = ['Jan', 'Feb', 'Mar', 'April', 'June'];
+
+months.splice(1, 0, 'Feb');
+months.splice(4, 1, 'May');
+
+// sort -> array.sort -> diese Methode wandelt in UTF um und vergleicht deren Werte -> also jetzt useless
