@@ -22,4 +22,22 @@ let test = ['meski', 'meskitest']
 test.unshift(); // liefert die neue laenge
 
 
-// other Arraz methods
+// other Array methods
+// concat
+
+const array1 = [1, 2, 3, 4, 5, 6,];
+const array2 = [7, 8, 9];
+
+const array3 = array1.concat(array2); // expected [1,2,3,4,5,6,7,8,9]
+
+
+// includes
+if (array2.includes('1')) {
+    console.print("true");
+}
+
+//indexOf
+array.indexOf(2) // expected 1
+
+// reverse
+array2.reverse(); // expected 9,8,7
