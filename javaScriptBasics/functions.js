@@ -65,7 +65,3 @@ function makeMisteryFunc() {
     }
 }
 
-// the Keyword this 
-
-// adding methdos to objects
-
