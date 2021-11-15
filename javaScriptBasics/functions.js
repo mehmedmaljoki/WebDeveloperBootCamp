@@ -30,4 +30,42 @@ function add(x, y) {
     return sum;
 }
 
+// mit var kann man außerhalb des Scopes auch zugreife.
+// mit let und const sind die geblocked.
+
 // exercises
+
+// function expresions
+const addition = function (a, b) {
+    return a + b;
+}
+
+// higher Order Functions
+function laugh() { console.log("HAHAHA") };
+
+function callTwice(functionAsArgument) {
+    functionAsArgument();
+    functionAsArgument();
+}
+
+callTwice(laugh);
+
+// returning functions
+
+function makeMisteryFunc() {
+    const rand = Math.random();
+    if (rand > 0.5) {
+        return function () {
+            console.log("YES");
+        }
+    } else {
+        return function () {
+            console.log("NO");
+        }
+    }
+}
+
+// the Keyword this 
+
+// adding methdos to objects
+
