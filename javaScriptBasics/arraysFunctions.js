@@ -97,3 +97,6 @@ clearInterval(id); // stops the setInterval
 // second       8               7               15
 // third        15              9               24
 // fourth       24              11              35
+
+const evens = [2, 4, 6, 8];
+evens.reduce((sum, num) => sum = num, 100);
