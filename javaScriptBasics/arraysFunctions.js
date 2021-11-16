@@ -63,6 +63,7 @@ words.some(w => w.includes('cake')); // true
 
 
 // every -> if every element passes the test is TRUE
+const words = ['dog', 'dig', 'log', 'bag']
 words.every(word => {
     return word.length === 3;
 }) //true
@@ -83,3 +84,16 @@ const id = setInternal(() => {
 
 clearInterval(id); // stops the setInterval
 
+
+
+// summing in an array with reduce
+[3, 5, 7, 9, 11].reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+})
+
+//! IMPORTANT
+// Callback     acculumator     currentValue    returnValue
+// firstCall    3               5               8
+// second       8               7               15
+// third        15              9               24
+// fourth       24              11              35
