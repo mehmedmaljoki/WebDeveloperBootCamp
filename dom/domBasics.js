@@ -23,3 +23,9 @@ document.querySelector('a[title="java"]'); // find the anker tag with title java
 document.querySelectorAll('p'); // liefert alle p
 
 
+//================================================================
+innerText // -> alles was im Element als text steht
+textContent // -> ist wie das MarkUp gespeichert ist, also die breakes usw... werden angezeigt
+innerHTML // -> man bekommt auch die Tags inkludiert
+
+
